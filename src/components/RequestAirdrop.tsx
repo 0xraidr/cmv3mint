@@ -67,24 +67,28 @@ export const RequestAirdrop: FC = () => {
     // setCount(candyMachine.itemsMinted.toNumber);
   };
 
-  const mintCount = async () => {
-    let METAPLEX = Metaplex.make(connection).use(
-      walletAdapterIdentity(walletAdapter)
-    );
-
-    let candyMachine = await METAPLEX.candyMachines().findByAddress({
-      address: new PublicKey("DGfwDSvBxYncPj17vpre7rSJwxjyRJs25KzST7Jyiius"),
-    });
-    let numMinted = candyMachine.itemsMinted.toNumber();
-    console.log(candyMachine.itemsMinted.toNumber());
-    setCount(numMinted);
-  };
   useEffect(() => {
+    const mintCount = async () => {
+      let METAPLEX = Metaplex.make(connection).use(
+        walletAdapterIdentity(walletAdapter)
+      );
+
+      let candyMachine = await METAPLEX.candyMachines().findByAddress({
+        address: new PublicKey("DGfwDSvBxYncPj17vpre7rSJwxjyRJs25KzST7Jyiius"),
+      });
+      let numMinted = candyMachine.itemsMinted.toNumber();
+      console.log(candyMachine.itemsMinted.toNumber());
+      setCount(numMinted);
+    };
     mintCount();
   });
 
   return (
     <div>
+      <h1 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-[#4f9ff5] to-[#ffffff] ">
+        Mint Price:
+      </h1>{" "}
+      <p className="text-orange-500 text-2xl">14,000,000 Bonk!</p>
       <button
         className="px-8 m-2 btn animate-pulse bg-gradient-to-r from-[#4f9ff5] via-[#4f9ff5] to-[#ffffff] hover:from-pink-500 hover:to-yellow-500 ..."
         onClick={onClick}
@@ -95,9 +99,7 @@ export const RequestAirdrop: FC = () => {
         <h1 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-[#4f9ff5] to-[#ffffff]">
           {count} / 999
         </h1>
-        <h1 className="text-xl ">Mint Price:</h1>{" "}
-        <p className="text-orange-500 text-2xl">14,000,000 Bonk!</p>
-        <p className="text-sm py-2">
+        <p className="text-xs py-2">
           Please make sure you have a tiny bit of SOL in your wallet for txn
           fees!
         </p>

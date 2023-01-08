@@ -34,7 +34,7 @@ export const HomeView: FC = ({}) => {
     <div className="md:hero mx-auto p-4">
       <div className="md:hero-content flex flex-col">
         <h1 className="text-center text-5xl md:pl-12 font-bold text-transparent bg-clip-text bg-gradient-to-tr from-[#4f9ff5] to-[#ffffff]">
-          Bonkers Lab{" "}
+          Bonker&apos;s Lab{" "}
         </h1>
         <div className="py-3 object-center">
           <Image
@@ -46,8 +46,8 @@ export const HomeView: FC = ({}) => {
           />
         </div>
         <h4 className="md:w-full text-center text-slate-300 my-2">
-          <h2 className="text-2xl pb-2">
-            999 Bonkers protecting Solana and Bonk from all the naysayers!
+          <h2 className="text-2xl pb-2 font-bold text-transparent bg-clip-text bg-gradient-to-tr from-[#4f9ff5] to-[#ffffff]">
+            999 Bonkers protecting Solana and Bonk!
           </h2>
           <p className="text-center mx-40">
             A community-driven project focused on creating utilities for Bonk

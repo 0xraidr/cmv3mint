@@ -30,6 +30,7 @@ export const RequestAirdrop: FC = () => {
     let METAPLEX = Metaplex.make(connection).use(
       walletAdapterIdentity(walletAdapter)
     );
+
     let candyMachine = await METAPLEX.candyMachines().findByAddress({
       address: new PublicKey("DGfwDSvBxYncPj17vpre7rSJwxjyRJs25KzST7Jyiius"),
     });

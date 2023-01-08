@@ -47,7 +47,7 @@ export const BasicsView: FC = ({}) => {
           <h2 className="text-center py-3 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-[#4f9ff5] to-[#ffffff]">
             Fund Allocation
           </h2>
-          <div>
+          <div className="text-center">
             <ul className="py-2">
               <li className="py-2">
                 <strong className="text-xl">50%</strong> of funds will be

@@ -14,6 +14,8 @@ import useUserSOLBalanceStore from "../../stores/useUserSOLBalanceStore";
 import Image from "next/image";
 import bonkers from "../../../public/images/bonkers.gif";
 
+import { Metaplex } from "@metaplex-foundation/js";
+
 export const HomeView: FC = ({}) => {
   const wallet = useWallet();
   const { connection } = useConnection();

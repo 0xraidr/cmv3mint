@@ -1,9 +1,13 @@
 import { useConnection, useWallet } from "@solana/wallet-adapter-react";
 import { LAMPORTS_PER_SOL, TransactionSignature } from "@solana/web3.js";
-import { FC, useCallback } from "react";
+import { FC, useCallback, useState, useEffect } from "react";
 import { notify } from "../utils/notifications";
 import useUserSOLBalanceStore from "../stores/useUserSOLBalanceStore";
-import { Metaplex } from "@metaplex-foundation/js";
+import {
+  candyMachineModule,
+  Metaplex,
+  toMintAccount,
+} from "@metaplex-foundation/js";
 import { walletAdapterIdentity } from "@metaplex-foundation/js";
 import { PublicKey } from "@metaplex-foundation/js";
 
@@ -11,6 +15,7 @@ export const RequestAirdrop: FC = () => {
   const { connection } = useConnection();
   //   const { publicKey } = useWallet();
   const { getUserSOLBalance } = useUserSOLBalanceStore();
+  const [count, setCount] = useState(0);
 
   let walletAdapter = useWallet();
   const { publicKey, connected } = useWallet();
@@ -59,7 +64,24 @@ export const RequestAirdrop: FC = () => {
     } catch (error: any) {
       console.log(error);
     }
+    // setCount(candyMachine.itemsMinted.toNumber);
   };
+
+  const mintCount = async () => {
+    let METAPLEX = Metaplex.make(connection).use(
+      walletAdapterIdentity(walletAdapter)
+    );
+
+    let candyMachine = await METAPLEX.candyMachines().findByAddress({
+      address: new PublicKey("DGfwDSvBxYncPj17vpre7rSJwxjyRJs25KzST7Jyiius"),
+    });
+    let numMinted = candyMachine.itemsMinted.toNumber();
+    console.log(candyMachine.itemsMinted.toNumber());
+    setCount(numMinted);
+  };
+  useEffect(() => {
+    mintCount();
+  });
 
   return (
     <div>
@@ -70,7 +92,10 @@ export const RequestAirdrop: FC = () => {
         <span>Mint</span>
       </button>
       <div>
-        <h1 className="text-2xl ">Mint Price:</h1>{" "}
+        <h1 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-[#4f9ff5] to-[#ffffff]">
+          {count} / 999
+        </h1>
+        <h1 className="text-xl ">Mint Price:</h1>{" "}
         <p className="text-orange-500 text-2xl">14,000,000 Bonk!</p>
         <p className="text-sm py-2">
           Please make sure you have a tiny bit of SOL in your wallet for txn

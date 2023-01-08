@@ -61,16 +61,17 @@ export const BasicsView: FC = ({}) => {
                 continue to build but we also have planned out SOL/Bonk!
                 bounties for the community to get involved!{" "}
               </li>
+
               <li className="py-2">
                 {" "}
-                <strong className="text-xl">10%</strong> of funds will go to our
-                artist!
+                <strong className="text-xl">10%</strong> of funds will be held
+                in our treasury for miscellaneous things such as contest and
+                giveaways!
               </li>
               <li className="py-2">
                 {" "}
                 <strong className="text-xl">10%</strong> of the remaining funds
-                will be held in our treasury for miscellaneous things such as
-                contest and giveaways!
+                will go to our artist!
               </li>
             </ul>
           </div>

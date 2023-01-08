@@ -1,0 +1,46 @@
+{
+  "name": "Bonkers Lab #572",
+  "symbol": "BKRS",
+  "description": "Protect Bonk and Solana from the naysayers at all costs! We are a community-driven project focused on creating utilities for Bonk and Solana, with a focus on promoting a fun and enjoyable experience for all users.",
+  "seller_fee_basis_points": 300,
+  "image": "572.png",
+  "external_url": "",
+  "edition": 572,
+  "attributes": [
+    {
+      "trait_type": "Backgrounds",
+      "value": "Night"
+    },
+    {
+      "trait_type": "Skin",
+      "value": "Zombie!"
+    },
+    {
+      "trait_type": "Clothes",
+      "value": "Hazmat Suit"
+    },
+    {
+      "trait_type": "Masks",
+      "value": "None"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Brown Red Headband"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "572.png",
+        "type": "image/png"
+      }
+    ],
+    "category": "image",
+    "creators": [
+      {
+        "address": "DTN9aYrsmuz1k9zTRXW56qLpfcn4gc2vzSJyvU11ae3C",
+        "share": 100
+      }
+    ]
+  }
+}

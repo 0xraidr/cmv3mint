@@ -1,0 +1,29 @@
+{
+  "number": 999,
+  "symbol": "BKRS",
+  "sellerFeeBasisPoints": 300,
+  "isMutable": true,
+  "isSequential": false,
+  "creators": [
+    {
+      "address": "DTN9aYrsmuz1k9zTRXW56qLpfcn4gc2vzSJyvU11ae3C",
+      "share": 100
+    }
+  ],
+  "uploadMethod": "bundlr",
+  "awsConfig": null,
+  "nftStorageAuthToken": null,
+  "shdwStorageAccount": null,
+  "pinataConfig": null,
+  "hiddenSettings": null,
+  "guards": {
+    "default": {
+      "tokenPayment": {
+        "amount": 1400000000000,
+        "mint": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+        "destinationAta": "G6BqEhSSzd1nNsmzyzqPha1szhxbnFhk4zq1XQNqvoFH"
+      }
+    },
+    "groups": null
+  }
+}

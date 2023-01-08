@@ -1,0 +1,46 @@
+{
+  "name": "Bonkers Lab #322",
+  "symbol": "BKRS",
+  "description": "Protect Bonk and Solana from the naysayers at all costs! We are a community-driven project focused on creating utilities for Bonk and Solana, with a focus on promoting a fun and enjoyable experience for all users.",
+  "seller_fee_basis_points": 300,
+  "image": "322.png",
+  "external_url": "",
+  "edition": 322,
+  "attributes": [
+    {
+      "trait_type": "Backgrounds",
+      "value": "Clay"
+    },
+    {
+      "trait_type": "Skin",
+      "value": "Skin 2"
+    },
+    {
+      "trait_type": "Clothes",
+      "value": "Brown Black Top"
+    },
+    {
+      "trait_type": "Masks",
+      "value": "Red Mask"
+    },
+    {
+      "trait_type": "Headwear",
+      "value": "Cowboy Hat"
+    }
+  ],
+  "properties": {
+    "files": [
+      {
+        "uri": "322.png",
+        "type": "image/png"
+      }
+    ],
+    "category": "image",
+    "creators": [
+      {
+        "address": "DTN9aYrsmuz1k9zTRXW56qLpfcn4gc2vzSJyvU11ae3C",
+        "share": 100
+      }
+    ]
+  }
+}

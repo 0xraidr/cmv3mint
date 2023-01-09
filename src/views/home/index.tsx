@@ -36,10 +36,10 @@ export const HomeView: FC = ({}) => {
         <h1 className="text-center text-5xl md:pl-12 font-bold text-transparent bg-clip-text bg-gradient-to-tr from-[#4f9ff5] to-[#ffffff]">
           Bonker&apos;s Lab{" "}
         </h1>
-        <div className="py-3 object-center">
+        <div className="py-3 object-center pl-5">
           <Image
             src={bonkers}
-            className="border rounded-full"
+            className="border rounded-full mx-auto"
             width={300}
             height={300}
             alt="mainLogo"
@@ -49,7 +49,7 @@ export const HomeView: FC = ({}) => {
           <h2 className="text-2xl pb-2 font-bold text-transparent bg-clip-text bg-gradient-to-tr from-[#4f9ff5] to-[#ffffff]">
             999 Bonkers protecting Solana and Bonk!
           </h2>
-          <p className="text-center mx-40">
+          <p className="text-center">
             A community-driven project focused on creating utilities for Bonk
             and Solana, with a focus on promoting a fun and enjoyable experience
             for all users.

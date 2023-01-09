@@ -6,11 +6,11 @@ export const BasicsView: FC = ({}) => {
   return (
     <div className="md:hero mx-auto p-4">
       <div className="md:hero-content flex flex-col">
-        <h1 className="text-center text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-[#4f9ff5] to-[#ffffff]">
+        <h1 className="text-center text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-[#4f9ff5] to-[#ffffff]">
           Roadmap
         </h1>
         {/* CONTENT GOES HERE */}
-        <div className="text-center px-20">
+        <div className="text-center text-sm md:text-lg px-20">
           {/* <SignMessage/> */}
           {/* <SendTransaction /> */}
           <div className="py-2">
@@ -44,7 +44,7 @@ export const BasicsView: FC = ({}) => {
             learning how to build awesome projects that can benefit us, and
             having a great time doing it!
           </div>
-          <h2 className="text-center py-3 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-[#4f9ff5] to-[#ffffff]">
+          <h2 className="text-center py-3 text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-[#4f9ff5] to-[#ffffff]">
             Fund Allocation
           </h2>
           <div className="text-center">

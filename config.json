@@ -19,11 +19,10 @@
   "guards": {
     "default": {
       "tokenPayment": {
-        "amount": 1200000000000,
+        "amount": 14000000,
         "mint": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
         "destinationAta": "G6BqEhSSzd1nNsmzyzqPha1szhxbnFhk4zq1XQNqvoFH"
       }
-    },
-    "groups": null
+    }
   }
 }

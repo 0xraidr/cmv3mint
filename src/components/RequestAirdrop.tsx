@@ -39,7 +39,7 @@ export const RequestAirdrop: FC = () => {
     );
 
     let candyMachine = await METAPLEX.candyMachines().findByAddress({
-      address: new PublicKey("DGfwDSvBxYncPj17vpre7rSJwxjyRJs25KzST7Jyiius"),
+      address: new PublicKey("5JAMWdVxForRZC8BQK3eeT1D8NXW12iujyoCCN7QiQLV"),
     });
     try {
       const txBuilder = await METAPLEX.candyMachines()
@@ -74,7 +74,7 @@ export const RequestAirdrop: FC = () => {
       );
 
       let candyMachine = await METAPLEX.candyMachines().findByAddress({
-        address: new PublicKey("DGfwDSvBxYncPj17vpre7rSJwxjyRJs25KzST7Jyiius"),
+        address: new PublicKey("5JAMWdVxForRZC8BQK3eeT1D8NXW12iujyoCCN7QiQLV"),
       });
       let numMinted = candyMachine.itemsMinted.toNumber();
       console.log(candyMachine.itemsMinted.toNumber());

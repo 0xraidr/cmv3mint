@@ -1,7 +1,7 @@
 {
-  "name": "Bonkers Lab #856",
+  "name": "Bonker's Lab #856",
   "symbol": "BKRS",
-  "description": "Protect Bonk and Solana from the naysayers at all costs! We are a community-driven project focused on creating utilities for Bonk and Solana, with a focus on promoting a fun and enjoyable experience for all users.",
+  "description": "Protect the Solana ecosystem from the naysayers at all costs! We are a community-driven project focused on creating utilities on Solana, with a focus on promoting a fun and enjoyable experience for all users.",
   "seller_fee_basis_points": 300,
   "image": "856.png",
   "external_url": "",
@@ -9,7 +9,7 @@
   "attributes": [
     {
       "trait_type": "Backgrounds",
-      "value": "Depths"
+      "value": "Dojo"
     },
     {
       "trait_type": "Skin",
@@ -17,15 +17,15 @@
     },
     {
       "trait_type": "Clothes",
-      "value": "Blue Tee"
+      "value": "Blue Orange Top"
     },
     {
       "trait_type": "Masks",
-      "value": "Yellow Mask"
+      "value": "Green Mask"
     },
     {
       "trait_type": "Headwear",
-      "value": "Blonde Pony Tail"
+      "value": "Black Purple Headband"
     }
   ],
   "properties": {

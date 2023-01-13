@@ -88,7 +88,7 @@ export const RequestAirdrop: FC = () => {
       <h1 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-tr from-[#4f9ff5] to-[#ffffff] ">
         Mint Price:
       </h1>{" "}
-      <p className="text-orange-500 text-2xl animate-pulse">12,000,000 Bonk!</p>
+      <p className="text-orange-500 text-2xl animate-pulse">14,000,000 Bonk!</p>
       <button
         className="px-8 m-2 btn animate-pulse bg-gradient-to-r from-[#4f9ff5] via-[#4f9ff5] to-[#ffffff] hover:from-pink-500 hover:to-yellow-500 ..."
         onClick={onClick}
